@@ -36,6 +36,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --home-banner-img: url("/images/wallhaven-wqery6-light.webp");
   --home-banner-text-color: #fff;
   --home-banner-icons-container-border-color: rgba(255,255,255,0.35);
   --home-banner-icons-container-background-color: rgba(255,255,255,0.3);
@@ -84,6 +85,7 @@
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --home-banner-img: url("/images/wallhaven-wqery6-light.webp");
     --home-banner-text-color: #fff;
     --home-banner-icons-container-border-color: rgba(255,255,255,0.35);
     --home-banner-icons-container-background-color: rgba(255,255,255,0.3);
@@ -133,6 +135,7 @@
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --home-banner-img: url("/images/wallhaven-wqery6-dark.webp");
     --home-banner-text-color: #d1d1b6;
     --home-banner-icons-container-border-color: rgba(197,197,197,0.35);
     --home-banner-icons-container-background-color: rgba(197,197,197,0.3);
@@ -181,6 +184,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --home-banner-img: url("/images/wallhaven-wqery6-light.webp");
   --home-banner-text-color: #fff;
   --home-banner-icons-container-border-color: rgba(255,255,255,0.35);
   --home-banner-icons-container-background-color: rgba(255,255,255,0.3);
@@ -228,6 +232,7 @@
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --home-banner-img: url("/images/wallhaven-wqery6-dark.webp");
   --home-banner-text-color: #d1d1b6;
   --home-banner-icons-container-border-color: rgba(197,197,197,0.35);
   --home-banner-icons-container-background-color: rgba(197,197,197,0.3);
@@ -256,8 +261,8 @@
   --highlight-attr: #22863a;
   --highlight-section: $highlight-section;
   --highlight-bullet: #6f42c1;
-  --highlight-addition: #abe338;
-  --highlight-deletion: #ffa07a;
+  --highlight-addition: #144212;
+  --highlight-deletion: #600;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -279,8 +284,8 @@
     --highlight-attr: #22863a;
     --highlight-section: $highlight-section;
     --highlight-bullet: #6f42c1;
-    --highlight-addition: #abe338;
-    --highlight-deletion: #ffa07a;
+    --highlight-addition: #144212;
+    --highlight-deletion: #600;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -326,8 +331,8 @@
   --highlight-attr: #22863a;
   --highlight-section: $highlight-section;
   --highlight-bullet: #6f42c1;
-  --highlight-addition: #abe338;
-  --highlight-deletion: #ffa07a;
+  --highlight-addition: #144212;
+  --highlight-deletion: #600;
 }
 .dark-mode {
   --code-foreground: #bfbfc7;
