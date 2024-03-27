@@ -17,6 +17,7 @@ export default function initUtils() {
     homeBannerBackground_dom: document.querySelector(".home-banner-background"),
     scrollProgressBar_dom: document.querySelector(".scroll-progress-bar"),
     pjaxProgressBar_dom: document.querySelector(".pjax-progress-bar"),
+    pjaxProgressIcon_dom: document.querySelector(".swup-progress-icon"),
     backToTopButton_dom: document.querySelector(".tool-scroll-to-top"),
     toolsList: document.querySelector(".hidden-tools-list"),
     toggleButton: document.querySelector(".toggle-tools-list"),
@@ -94,10 +95,11 @@ export default function initUtils() {
         this.updateNavbarShrink();
         // this.updateHomeBannerBlur();
         this.updateAutoHideTools();
+        this.updateAPlayerAutoHide();
       });
       window.addEventListener(
         "scroll",
-        this.debounce(() => this.updateHomeBannerBlur(), 20),
+        this.debounce(() => this.updateHomeBannerBlur(), 80),
       );
     },
 
@@ -136,7 +138,7 @@ export default function initUtils() {
 
         try {
           requestAnimationFrame(() => {
-            this.homeBannerBackground_dom.style.filter = `blur(${blurValue}px)`;
+            this.homeBannerBackground_dom.style.transition = "0.3s";
             this.homeBannerBackground_dom.style.webkitFilter = `blur(${blurValue}px)`;
           });
         } catch (e) {
@@ -147,33 +149,46 @@ export default function initUtils() {
     },
 
     updateAutoHideTools() {
-      const y = window.scrollY;
+      const y = window.pageYOffset;
       const height = document.body.scrollHeight;
       const windowHeight = window.innerHeight;
       const toolList = document.getElementsByClassName(
         "right-side-tools-container",
       );
-      const aplayer = document.getElementById("aplayer");
 
       for (let i = 0; i < toolList.length; i++) {
         const tools = toolList[i];
-        if (y <= 100) {
-          if (location.pathname === config.root) {
+        if (y <= 0) {
+          if (location.pathname !== "/") {
+            //console.log(location.pathname)
+          } else {
             tools.classList.add("hide");
-            if (aplayer !== null) {
-              aplayer.classList.add("hide");
-            }
           }
         } else if (y + windowHeight >= height - 20) {
           tools.classList.add("hide");
-          if (aplayer !== null) {
-            aplayer.classList.add("hide");
-          }
         } else {
           tools.classList.remove("hide");
-          if (aplayer !== null) {
-            aplayer.classList.remove("hide");
+        }
+      }
+    },
+
+    updateAPlayerAutoHide() {
+      const aplayer = document.getElementById("aplayer");
+      if (aplayer == null) {
+      } else {
+        const y = window.pageYOffset;
+        const height = document.body.scrollHeight;
+        const windowHeight = window.innerHeight;
+        if (y <= 0) {
+          if (location.pathname !== "/") {
+            //console.log(location.pathname)
+          } else {
+            aplayer.classList.add("hide");
           }
+        } else if (y + windowHeight >= height - 20) {
+          aplayer.classList.add("hide");
+        } else {
+          aplayer.classList.remove("hide");
         }
       }
     },
@@ -269,6 +284,8 @@ export default function initUtils() {
       }
     },
 
+    // big image viewer
+
     // set how long ago language
     setHowLongAgoLanguage(p1, p2) {
       return p2.replace(/%s/g, p1);
@@ -337,8 +354,6 @@ export default function initUtils() {
       }
     },
   };
-
-  utils.updateAutoHideTools();
 
   // init scroll
   utils.registerWindowScroll();
