@@ -4,7 +4,7 @@
     <title>CET-1</title>
     <url>/2023/11/14/Welcom!/</url>
     <content><![CDATA[<p>测试一下我到底行还是不行</p>
-<span id="more"></span>]]></content>
+]]></content>
       <categories>
         <category>测试</category>
       </categories>
@@ -103,30 +103,94 @@
                      data-src="/2024/03/26/%E8%AF%A5%E6%AD%BB%E7%9A%84%E5%81%87%E6%9C%9F%E5%88%B0%E5%BA%95%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/MATLAB3.jpg"
                       alt="matlab2"
                 ></p>
-<p>5.最后额度最后，当然是这篇博客了，这是一些写这个博客时候的小片段<img  
+<p>5.最后的最后，当然是这篇博客了，这是一些写这个博客时候的小片段<img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="/2024/03/26/%E8%AF%A5%E6%AD%BB%E7%9A%84%E5%81%87%E6%9C%9F%E5%88%B0%E5%BA%95%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/%E6%88%90%E6%9E%9C.png"
                       alt="chengguo"
                 ><a href="%E6%88%90%E6%9E%9C2.png">chengguo2</a></p>
-<span id="more"></span>
+<p>后面会专门开一篇讲博客</p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>知识</category>
       </categories>
   </entry>
   <entry>
     <title>随便聊聊</title>
     <url>/2023/11/16/%E9%9A%8F%E4%BE%BF%E8%81%8A%E8%81%8A/</url>
-    <content><![CDATA[<p>搞了好几天了，终于建好这个鬼东西了，有一说一是真的累，以后这个就用来记录一些七七八八的琐事咯，生活上啊学习上什么的，下周还有解析几何和高等代数的考试，但总体来说没有前面那段时间忙（不然我也不会搞这玩意。。。）以后会慢慢完善这个网站的，比如评论啊放些图片啊什么的，有人可能觉得微信朋友圈或QQ空间也可以实现这些用途，但总归来说，你难道不觉得有一个用自己名字命名的网站很酷吗！！！！！折腾这么久，但感觉还蛮有意义的，今天就写到这了，以后不定期更新~<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/image.png"
-                      alt="1"
-                ></p>
-<span id="more"></span>]]></content>
+    <content><![CDATA[<p>搞了好几天了，终于建好这个鬼东西了，有一说一是真的累，以后这个就用来记录一些七七八八的琐事咯，生活上啊学习上什么的，下周还有解析几何和高等代数的考试，但总体来说没有前面那段时间忙（不然我也不会搞这玩意。。。）以后会慢慢完善这个网站的，比如评论啊放些图片啊什么的，有人可能觉得微信朋友圈或QQ空间也可以实现这些用途，但总归来说，你难道不觉得有一个用自己名字命名的网站很酷吗！！！！！折腾这么久，但感觉还蛮有意义的，今天就写到这了，以后不定期更新~</p>
+]]></content>
       <categories>
         <category>测试</category>
       </categories>
+  </entry>
+  <entry>
+    <title>博客中出现的一些问题</title>
+    <url>/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>1.hexo clean 是用来清除缓存的<br>  hexo d  hexo s 用于本地打开博客，localhost地址一般是自己定义的<br>  hexo d -g 用于将博客更新的内容部署到网页上<br>  打开git后复制是Ctrl+insert，粘贴是shift+insert</p>
+<p>2.更换主题后可以查看主题作者写的操作文档，在github上他应该会说，不行就直接上网上搜（周齐家教的）</p>
+<p>3.有时候新装的主题用不了，会显示FATAL Port 4000 has been used. Try other port instead.<br>这就是4000端口被占用了，然后你会发现用hexo s在本地打不开博客，这时候可以用下面这串代码新建一个端口，端口数字不是固定的，看你喜欢啥填啥</p>
+<div class="highlight-container" data-rel="M"><figure class="iseeu highlight m"><table><tr><td class="code"><pre><span class="line">#端口</span><br><span class="line">server:</span><br><span class="line">  port: <span class="number">40401</span></span><br><span class="line">  compress: <span class="built_in">true</span></span><br><span class="line">  header: <span class="built_in">true</span></span><br></pre></td></tr></table></figure></div>
+<p>这串代码是写在hex根目录的_config.yml文件里，直接复制粘贴进去就可以了<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/hexo%E6%A0%B9%E7%9B%AE%E5%BD%95.png"
+                      alt="genmulu1"
+                ><br>就是上面这个界面</p>
+<p>4.博客markdown格式的文本插入不了图片？</p>
+<p>将hexo根目录 _config.yml 中的 post_asset_folder: boole 中的boole值改为true（就相当于打开这个开关）然后你的文章就可以插入图片了<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/hexo%E6%A0%B9%E7%9B%AE%E5%BD%952.png"
+                      alt="genmulu2"
+                ><br>然后插入图片也是有规则的，首先你要在写博客的位置新建一个和你要插入图片的博客的相同名字的文件夹，类似于这个<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/hexo%E6%A0%B9%E7%9B%AE%E5%BD%953.png"
+                      alt="genmulu3"
+                ><br>然后将你需要插入的图片先放进去（我目前知道png后缀的和jpg后缀的可以插入，其他格式没试过）<br>最后用语法</p>
+<div class="highlight-container" data-rel="M"><figure class="iseeu highlight m"><table><tr><td class="code"><pre><span class="line">![abc](ABC.xyz)</span><br></pre></td></tr></table></figure></div>
+<p>将图片插入，其中abc是假如图片显示不出就会显示的字符（直接当做这张图片的描述就可以了），ABC是这张图片的名字，xyz是图片的格式，名字和格式一定要一一对应，否则是显示不出来的<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/hexo%E6%A0%B9%E7%9B%AE%E5%BD%954.png"
+                      alt="genmulu4"
+                > <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/hexo%E6%A0%B9%E7%9B%AE%E5%BD%955.png"
+                      alt="genmulu5"
+                ><br>我一般喜欢将要导入的图片先发给文件传输助手，然后另存为就可以选地址和改名字了，这个方法对电脑上的截图比较好用</p>
+<p>5.网站显示的时候想控制它是完全显示还是简略显示只看你有没有输入这行代码</p>
+<div class="highlight-container" data-rel="M"><figure class="iseeu highlight m"><table><tr><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></div>
+<p>输入了就是完全显示，没输就是简略显示区别在下面<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/%E9%97%AE%E9%A2%981.png"
+                      alt="wenti1"
+                ><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/%E9%97%AE%E9%A2%982.png"
+                      alt="wenti2"
+                ></p>
+<p>6.markdown格式想使用代码块用六个&#96; <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2024/03/29/%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/%E9%97%AE%E9%A2%983.png"
+                      alt="wenti3"
+                ><br>如果是其他语言，比如Java，在上面三个点后面跟上“java”就可以让这种语言中的关键字高亮显示，比如</p>
+<div class="highlight-container" data-rel="Java"><figure class="iseeu highlight java"><table><tr><td class="code"><pre><span class="line">System.out.print(<span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure></div>
+<p>markdown的简写是m</p>
+<p>——-持续更新中</p>
+]]></content>
+      <categories>
+        <category>知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/03/29/%E4%B8%80%E7%82%B9%E5%A5%96%E9%A1%B9/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
